@@ -1,4 +1,4 @@
-package atividade;
+package beecrownd;
 
 import java.util.Scanner;
 
