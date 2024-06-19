@@ -9,6 +9,7 @@ public class Order {
 	private Date moment;
 	private OrderStatus status;
 	
+	//CONSTRUTORES
 	public Order() {}
 
 	public Order(Integer id, Date moment, OrderStatus status) {
@@ -17,6 +18,7 @@ public class Order {
 		this.status = status;
 	}
 
+	//GETTERS AND SETTERS
 	public Integer getId() {
 		return id;
 	}
@@ -40,11 +42,22 @@ public class Order {
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
-
+	//TOSTRING
 	@Override
 	public String toString() {
 		return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
 	};
 	
+	//METODOS
+	public void addItem(OrderItem item) {
+		
+	}
 	
+	public void removeItem(OrderItem item) {
+		
+	}
+	
+	public double total() {
+		return 0;
+	}
 }
