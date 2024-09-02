@@ -12,10 +12,10 @@ public class Bee2434 {
 		
 		for(int i=0;i<n;i++) {
 			int valor = sc.nextInt();
-			if (menor>m) {
-				menor = m;
-			}
 			m += valor;
+		}
+		if (m < menor) {
+			menor = m;
 		}
 		
 		System.out.println(menor);
