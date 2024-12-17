@@ -12,6 +12,7 @@ public class Bee1143 {
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		@SuppressWarnings("unused")
 		int n;
 		func(n = sc.nextInt());
 		

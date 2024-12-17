@@ -1,23 +1,24 @@
 package beecrownd;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Teste {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		double salario = sc.nextDouble();
-		double sum = 0;
-		
-		if (salario <= 2000) {
-			System.out.println("Isento");
-		}else if (salario<=3000) {
-			salario = salario % 2000;
-			sum = salario * 0.08;
-		}else if (salario<=3000) {
-			salario = salario % 2000;
-			sum = salario * 0.08;
-		}
-		
-		sc.close();
+		 Scanner sc = new Scanner(System.in);
+	        
+		 DateTimeFormatter fmt = DateTimeFormatter.ofPattern("HH");
+		 System.out.println("inicial");
+		 LocalDateTime horaInicial = LocalDateTime.of
+		 System.out.println("final");
+		 LocalDateTime horaFinal = LocalDateTime.parse(sc.nextLine(),fmt);
+		 
+		 int horas = Duration.between(horaInicial, horaFinal).toHoursPart();
+		 
+		 System.out.println("O JOGO DUROU "+horas+" HORA(S)");
+		 
+	      sc.close();
 	}
 }

@@ -1,3 +1,8 @@
-
-module Curso {
+/**
+ * 
+ */
+/**
+ * 
+ */
+module teste {
 }
